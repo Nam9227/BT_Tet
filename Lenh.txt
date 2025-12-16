@@ -1,3 +1,4 @@
 pip install pyinstaller 		  # cài đặt thư viện
 pyinstaller --onefile --windowed main.py  # tạo .py -> .exe : chạy trực tiếp ko qua cmd
 pyinstaller --onefile  main.py		  # tạo .py -> .exe : chạy trực tiếp trên cmd
+python -m PyInstaller --onefile main.py
