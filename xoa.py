@@ -19,6 +19,15 @@ class cs_xoa():
     def xoacs(self):
         for i in self.kq.winfo_children():
             i.destroy()
+    def xoaall(self):
+        BG_FRAME = '#B0D7C6'       
+        EXIT_BG = '#F46060'
+        global ds
+        ds.clear()
+        self.xoacs()
+        t=Label(self.kq,text=f" Đã Xóa Toàn Bộ Sinh Viên !",font=('Arial',10),fg=EXIT_BG,bg=BG_FRAME)
+        t.pack(anchor='n', padx=1, pady=1)
+        luuthaydoi()
     def xoa(self):
         BG_FRAME = '#B0D7C6' 
         FG_DARK = '#1E5E40'      
@@ -79,7 +88,9 @@ class cs_xoa():
         self.kq=Frame(cs,bg=BG_FRAME)
         self.kq.pack(anchor='n', padx=15, pady=7)
         a=Button(ten_1,text= "Xóa",font=('Arial',12),bg="#CC6666",command=self.xoa,fg="#FFFFFF")
-        a.pack(side='left', padx=(120,10))
+        b=Button(ten_1,text= "Xóa Toàn Bộ",font=('Arial',12),bg="#CC6666",command=self.xoaall,fg="#FFFFFF")
+        a.pack(side='right', padx=(10,10))
+        b.pack(side='right', padx=(10,10))
         
         setattr(self, "cs", cs)
 if __name__ == "__main__":
