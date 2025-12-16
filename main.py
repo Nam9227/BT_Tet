@@ -3,6 +3,7 @@ from tkinter import messagebox
 from them import cs_them
 from tim import cs_tim
 from xoa import cs_xoa
+from full import cs_full
 import json
 try:
     with open("dulieu.json", "r", encoding="utf-8") as f:
@@ -19,11 +20,7 @@ def them():
 def tim():
     cs_tim(home)
 def full():
-    cs=Toplevel()
-    d1=Label(cs,text="Mã Sinh viên",font=('',15))
-    msv=Entry(cs,width=22,font=('',15))
-    d1.place(x=10 ,y= 10)
-    msv.place(x=10 ,y= 10)
+    cs_full()
 def xoa():
     cs_xoa(home)
 def thong_tin():
