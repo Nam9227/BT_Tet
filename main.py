@@ -20,7 +20,7 @@ def them():
 def tim():
     cs_tim(home)
 def full():
-    cs_full()
+    cs_full(home)
 def xoa():
     cs_xoa(home)
 def thong_tin():
