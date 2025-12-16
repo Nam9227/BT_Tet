@@ -26,7 +26,7 @@ def xoa():
 def thong_tin():
     messagebox.showinfo(
     "Thông tin",
-    "Phần mềm quản lý dữ liệu lớp học v1.3\n"
+    "Phần mềm quản lý dữ liệu lớp học v2.0\n"
     "Tác giả: Văn Nam, Đình Phú , Thế Công\n"
     "Năm phát hành: 2025\n"
 )
