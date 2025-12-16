@@ -58,7 +58,7 @@ btn_h = 40
 t1 = Button(home, text='Thêm Sinh viên', font=('Arial', 11), command=them, bg=BTN_BG, fg=FG_DARK)
 t2 = Button(home, text='Tìm Kiếm Sinh Viên', font=('Arial', 11), command=tim, bg=BTN_BG, fg=FG_DARK)
 t3 = Button(home, text='Hiển Thị Toàn Bộ Điểm', font=('Arial', 10), command=full, bg=BTN_BG, fg=FG_DARK)
-t4 = Button(home, text='Xóa Dữ Liệu Bằng MSV', font=('Arial', 11), command=xoa, bg=BTN_BG, fg=FG_DARK)
+t4 = Button(home, text='Xóa Dữ Liệu Sinh Viên', font=('Arial', 11), command=xoa, bg=BTN_BG, fg=FG_DARK)
 t5 = Button(home, text='Thoát', font=('Arial', 10, 'bold'), command=luufile, bg=EXIT_BG, fg=WHITE_FG)
 t6 = Button(home, text='Thông Tin', font=('Arial', 10), command=thong_tin, bg=BTN_BG, fg=FG_DARK)
 t1.place(relx=0.5, y=48, anchor="n", relwidth=btn_width, height=btn_h)
